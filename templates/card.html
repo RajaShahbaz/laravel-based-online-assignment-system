@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admira - Bootstrap Admin Template</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--Logo Area Start-->
+    <div class="logo-area">
+        <div class="logo bg-primary text-white">
+            <a href="index.html">Ad<span>mira.</span></a>
+        </div>
+        <div class="menu-icon bg-primary text-white">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <!--Logo Area End-->
+
+    <!--Sidebar Start-->
+    <div class="sidebar bg-dark">
+        <ul>
+            <li class="nav-title text-white">Navigation</li>
+            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="media.html"><i class="fas fa-images"></i> Media</a></li>
+            <li class="has-child"><a href="#"><i class="fas fa-thumbtack"></i> Posts</a>
+                <ul class="children">
+                    <li><a href="posts.html">All Posts</a></li>
+                    <li><a href="add-post.html">Add New</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="tags.html">Tags</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fab fa-buffer"></i> UI Elements</a>
+                <ul class="children">
+                    <li><a href="button.html">Button</a></li>
+                    <li><a href="alert.html">Alert</a></li>
+                    <li><a href="card.html">Card</a></li>
+                    <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                    <li><a href="pagination.html">Pagination</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fas fa-table"></i> Tables</a>
+                <ul class="children">
+                    <li><a href="basic-table.html">Basic Table</a></li>
+                    <li><a href="datatable.html">Data Table</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fab fa-wpforms"></i> Form Elements</a>
+                <ul class="children">
+                    <li><a href="basic-form.html">Basic</a></li>
+                    <li><a href="advanced-form.html">Advanced</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fas fa-user-lock"></i></i> Authentication</a>
+                <ul class="children">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="resetpass.html">Reset Password</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--Sidebar End-->
+
+    <!--Header Start-->
+    <div class="topbar bg-primary">
+        <div class="dropdown profile-dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/users/1.jpg" class="width-40 round-img" alt="Image">
+            </a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                    <li><a class="dropdown-item" href="#">Downloads</a></li>
+                    <li><a class="dropdown-item" href="#">My Cart</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Header End-->
+
+    <!--Main Body Start-->
+    <div class="main-body bg-light">
+        <div class="wrapper p-3">
+            <div class="breadcrumb-links">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li class="breadcrumb-item active">Card</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-title">Regular Cards</div>
+                        <div class="card-content">
+                            <h4 class="forth-title">Card using Bootstrap Regular Styles</h4>
+                            <p class="para mb-20">You can be use those cards for your desired dynamic content. It will
+                                be help you to linked another url. </p>
+                            <div class="cards">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/card/1.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/card/2.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <img class="card-img-top" src="images/card/3.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-title">Rounded Cards</div>
+                        <div class="card-content">
+                            <h4 class="forth-title">Card using Rounded Styles</h4>
+                            <p class="para mb-20">You can be use those cards for your desired dynamic content. It will
+                                be help you to linked another url. </p>
+                            <div class="cards">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card card-round">
+                                            <img class="card-img-top" src="images/card/1.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card card-round">
+                                            <img class="card-img-top" src="images/card/2.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card card-round">
+                                            <img class="card-img-top" src="images/card/3.jpg" alt="Image">
+                                            <div class="card-body">
+                                                <h4 class="forth-title">Card title goes here</h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-title">Linked Cards</div>
+                        <div class="card-content">
+                            <h4 class="forth-title">Card using Linked Styles</h4>
+                            <p class="para mb-20">You can be use those cards for your desired dynamic content. It will
+                                be help you to linked another url. </p>
+                            <div class="cards">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/card/1.jpg" alt="Image">
+                                            </a>
+                                            <div class="card-body">
+                                                <h4 class="forth-title"><a href="#">Card title goes here</a></h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn flat btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/card/2.jpg" alt="Image">
+                                            </a>
+                                            <div class="card-body">
+                                                <h4 class="forth-title"><a href="#">Card title goes here</a></h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn flat btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <!-- Card Item Start -->
+                                        <div class="card">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/card/3.jpg" alt="Image">
+                                            </a>
+                                            <div class="card-body">
+                                                <h4 class="forth-title"><a href="#">Card title goes here</a></h4>
+                                                <p class="card-text">
+                                                    Some quick example text to build on the card title
+                                                    and make up the bulk of the card's content.
+                                                </p>
+                                                <a href="#!" class="btn flat btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                        <!-- Card Item End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Body End-->
+
+    <!--Javascripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

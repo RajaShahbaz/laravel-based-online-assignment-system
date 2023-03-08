@@ -1,0 +1,36 @@
+.form-control {
+    border-radius: 0;
+    font-size: 14px;
+    &:focus {
+        border-color: $primary;
+        box-shadow: none;
+    }
+}
+.custom-control-input, .custom-file-input {
+    box-shadow: none;
+    &:focus {
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+}
+.custom-control-label::before {
+    border-radius: 0 !important;
+    box-shadow: none;
+}
+input[type='submit'] {
+    border-radius: 0;
+}
+.input-group-text {
+    padding: 0 .75rem;
+    border-radius: 0;
+}
+.custom-switch {
+    .custom-control-label {
+        &::before {
+            border-radius: .5rem !important;
+        }
+    }
+}
+.input-group-text {
+    font-size: 14px;
+}

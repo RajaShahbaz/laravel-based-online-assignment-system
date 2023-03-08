@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/vendor/viewerjs/viewer.common.js": "/vendor/viewerjs/viewer.common.js",
+    "/vendor/viewerjs/viewer.css": "/vendor/viewerjs/viewer.css",
+    "/vendor/viewerjs/viewer.esm.js": "/vendor/viewerjs/viewer.esm.js",
+    "/vendor/viewerjs/viewer.js": "/vendor/viewerjs/viewer.js",
+    "/vendor/viewerjs/viewer.min.css": "/vendor/viewerjs/viewer.min.css",
+    "/vendor/viewerjs/viewer.min.js": "/vendor/viewerjs/viewer.min.js"
+}

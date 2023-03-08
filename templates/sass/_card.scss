@@ -1,0 +1,17 @@
+
+.card {
+    .card-img-top {
+        border-radius: 0;
+    }
+    &.card-round {
+        border-radius: 10px;
+        
+        .card-img, .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .btn {
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,0 +1,488 @@
+/*
+  Template Name : Admira - Bootstrap Admin Template
+  Author      	: WPCODERPROBD
+  Template URI  : https://incap.wpcoderpro.com
+  Created Date  : 08-04-2020
+  Last Update   : 20-04-2020
+
+---======================================================---
+
+TABLE OF CONTENT
+
+---======================================================---
+1. General Style
+
+*/
+@import "_colors";
+
+@mixin transition($value) {
+  transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  -webkit-transition: $value;
+}
+
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+ol,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+.table td,
+.table th {
+  vertical-align: middle;
+}
+.forth-title {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: $dark;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.para {
+  color: $gray;
+}
+.bg-dark {
+  background-color: $dark !important;
+}
+.text-dark {
+  color: $dark !important;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  @include transition(0.3s);
+  &:hover {
+    text-decoration: none;
+  }
+}
+label {
+  color: $gray;
+}
+.alert.no-bg {
+  background-color: transparent;
+}
+.alert.no-bg.alert-light {
+  border-color: $gray;
+}
+.overlay-primary {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+.width-60 {
+  width: 60px;
+  height: auto;
+}
+.width-40 {
+  width: 40px;
+  height: auto;
+}
+.round-img {
+  border-radius: 50%;
+}
+.logout-body {
+  max-width: 500px;
+  margin: auto;
+  .logo {
+    float: none;
+    width: 100%;
+    h2 {
+      a {
+        color: $dark;
+      }
+    }
+  }
+}
+.logo-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+.logo {
+  width: 180px;
+  padding: 9px 0 10px 10px;
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+.menu-icon {
+  width: 50px;
+  padding: 20px 0;
+  overflow: hidden;
+  text-align: center;
+  i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  right: 0;
+  height: 64px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: right;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+  margin-left: auto;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.main-body {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  margin-left: 230px;
+  padding-top: 64px;
+  transition: 0.5s ease-in-out;
+}
+.profile-dropdown {
+  .dropdown-menu {
+    .dropdown-item {
+      font-size: 14px;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+}
+.dropdown-menu {
+  top: 10px !important;
+  border-radius: 0;
+}
+.icon-box {
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  .icon {
+    margin-bottom: 1rem;
+    i {
+      font-size: 16px;
+      display: inline-block;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      padding: 8px;
+    }
+  }
+  .icon-title {
+    h4 {
+      display: inline-block;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+      vertical-align: middle;
+      &.float-right {
+        font-size: 20px;
+      }
+    }
+  }
+  &.bg-primary {
+    .icon {
+      i {
+        color: $white;
+        border-color: $white;
+      }
+      span {
+        color: $white;
+      }
+    }
+    .icon-title {
+      h4 {
+        color: $white;
+      }
+    }
+  }
+  &.bg-white {
+    border-color: $light;
+    .icon {
+      i {
+        color: $primary;
+        border-color: $primary;
+      }
+      span {
+        color: $gray;
+      }
+    }
+    .icon-title {
+      h4 {
+        color: $primary;
+        &.float-right {
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+.card {
+  margin-top: 1rem;
+  border-radius: 0;
+  .card-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  &.card-primary {
+    border-color: $primary;
+    & > .card-title {
+      padding: 10px;
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  .card-content {
+    padding: 1rem;
+  }
+  .table {
+    margin-bottom: 0;
+    th,
+    td {
+      text-align: center;
+    }
+    td {
+      a {
+        font-size: 13px;
+        color: $dark;
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+#chart {
+  margin: auto;
+}
+
+table {
+  &.dataTable {
+    border-left: 1px solid $light;
+    border-right: 1px solid $light;
+    &.no-footer {
+      border-bottom-color: $light;
+    }
+    thead {
+      tr {
+        background: $light !important;
+        text-transform: uppercase;
+        font-size: 14px;
+        th {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+  td {
+    color: $gray;
+    padding: 10px !important;
+    a {
+      font-size: 14px;
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:last-child {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.dataTables_length {
+  margin-bottom: 1rem;
+  label {
+    color: $gray;
+    select {
+      padding: 8px;
+      border-radius: 0;
+      border: 1px solid $light;
+      color: $gray;
+    }
+  }
+}
+
+.dataTables_wrapper {
+  .dataTables_paginate {
+    .paginate_button {
+      border: 1px solid $light !important;
+      background: transparent !important;
+      color: $gray !important;
+      &.current {
+        background: $primary !important;
+        color: $white !important;
+        &:hover {
+          color: $white !important;
+        }
+      }
+      &:hover {
+        background: $primary !important;
+        color: $white !important;
+      }
+      &.disabled:hover {
+        background: transparent !important;
+      }
+    }
+  }
+}
+.select2-container--default {
+  .select2-selection--single {
+    border-radius: 0;
+    padding: 3px;
+    height: 35px;
+    .select2-selection__arrow {
+      b {
+        margin-left: -8px;
+        margin-top: 0px;
+      }
+    }
+  }
+  .select2-selection--multiple {
+    border-radius: 0;
+    border-color: $border;
+    &:focus {
+      border-color: $primary !important;
+    }
+    .select2-selection__choice {
+      background-color: $primary;
+      color: $white;
+      border: none;
+      border-radius: 0;
+    }
+    .select2-selection__choice__remove {
+      border-radius: 0;
+      border: none;
+      color: $white;
+      padding: 1px 6px;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+  }
+  &.select2-container--focus {
+    .select2-selection--multiple {
+      border-color: $border;
+    }
+  }
+  .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: $primary;
+    font-size: 15px;
+    color:$white;
+  }
+}
+
+.post-thumbnail {
+  margin-bottom: 1rem;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.media-item {
+  position: relative;
+  border: 3px solid $border;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+  }
+  .media-links {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: $dark;
+  }
+  .icon-edit {
+    color: $white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .icon-trash {
+    color: $white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &:hover {
+    .media-links {
+      opacity: .8;
+    }
+  }
+}
