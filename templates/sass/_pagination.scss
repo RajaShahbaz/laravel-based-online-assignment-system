@@ -1,0 +1,44 @@
+.pagination-wrapper {
+    &.hovered {
+        .pagination {
+            border-radius: 0;
+            .page-item:first-child {
+                .page-link {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+            .page-item:last-child {
+                .page-link {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+            .page-item {
+                .page-link {
+                    &:hover {
+                        background-color: $primary;
+                        border-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.rounded {
+        .pagination {
+            border-radius: 0;
+            .page-item {
+                .page-link {
+                    border-radius: 6px;
+                    margin-right: 5px;
+                    &:hover {
+                        background-color: $primary;
+                        border-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

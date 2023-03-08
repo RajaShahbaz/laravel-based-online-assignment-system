@@ -1,0 +1,112 @@
+
+.sidebar {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 230px;
+    height: calc(100vh - 64px);
+    overflow: auto;
+    z-index: 10;
+    transition: .5s ease-in-out;
+    scrollbar-width: thin;
+    ul {
+      li {
+        a {
+          display: block;
+          padding: 10px 15px;
+          color: darken($white, 10);
+          font-size: 15px;
+          font-weight: 400;
+          position: relative;
+          i {          
+            font-size: 14px;
+            display: inline-block;
+            margin-right: 12px;
+            margin-top: 3px;
+          }
+          &:hover {
+            color: $white;
+            background-color: $softblack;
+          }
+        }
+        &.has-child {
+          & > a {
+            &::after {
+              display: inline-block;
+              font-style: normal;
+              font-variant: normal;
+              text-rendering: auto;
+              font-family: "Font Awesome 5 Free"; 
+              font-weight: 900; 
+              content: "\f067";
+              top: 28%;
+              right: 15px;
+              font-size: 12px;
+              position: absolute;
+              transition: .5s;
+              -webkit-font-smoothing: antialiased;
+            }
+          }
+          .children {
+            text-indent: 20px;
+            display: none;
+            li {
+              a::before {
+                display: inline-block;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900;
+                content: "\f192";
+                top: 15px;
+                left: 15px;
+                font-size: 7px;
+                position: absolute;
+                -webkit-font-smoothing: antialiased;
+              }
+              a {
+                padding-left: 30px; 
+              }
+            }
+            &.show {
+              display: block;
+              transition: all 0.2s ease-in-out;
+              transition-property: height;
+            }
+          }
+        }
+      }    
+    }
+    & > ul > li {      
+      border-bottom: 1px solid $softblack;
+    }
+    & > ul > li:last-child {
+      border-bottom: none;
+    }
+    .nav-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: none;
+    }
+    
+  }
+.icon-turn::after {
+  content: '\f068' !important;
+}
+.sidebar-off {
+    .logo-area {
+      left: -175px;
+    }
+    .sidebar {
+      left: -230px;
+    }
+    .topbar {
+      left: 55px;
+    }
+    .main-body {
+      margin-left: 0;
+    }
+}

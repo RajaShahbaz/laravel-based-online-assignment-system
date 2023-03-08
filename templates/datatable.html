@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admira - Bootstrap Admin Template</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/plugins/datatable/datatables.min.css">
+    <link rel="stylesheet" href="css/plugins/datatable/bootstrap-table.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--Logo Area Start-->
+    <div class="logo-area">
+        <div class="logo bg-primary text-white">
+            <a href="index.html">Ad<span>mira.</span></a>
+        </div>
+        <div class="menu-icon bg-primary text-white">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <!--Logo Area End-->
+
+    <!--Sidebar Start-->
+    <div class="sidebar bg-dark">
+        <ul>
+            <li class="nav-title text-white">Navigation</li>
+            <li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="media.html"><i class="fas fa-images"></i> Media</a></li>
+            <li class="has-child"><a href="#"><i class="fas fa-thumbtack"></i> Posts</a>
+                <ul class="children">
+                    <li><a href="posts.html">All Posts</a></li>
+                    <li><a href="add-post.html">Add New</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="tags.html">Tags</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fab fa-buffer"></i> UI Elements</a>
+                <ul class="children">
+                    <li><a href="button.html">Button</a></li>
+                    <li><a href="alert.html">Alert</a></li>
+                    <li><a href="card.html">Card</a></li>
+                    <li><a href="breadcrumb.html">Breadcrumb</a></li>
+                    <li><a href="pagination.html">Pagination</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fas fa-table"></i> Tables</a>
+                <ul class="children">
+                    <li><a href="basic-table.html">Basic Table</a></li>
+                    <li><a href="datatable.html">Data Table</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fab fa-wpforms"></i> Form Elements</a>
+                <ul class="children">
+                    <li><a href="basic-form.html">Basic</a></li>
+                    <li><a href="advanced-form.html">Advanced</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a href="#"><i class="fas fa-user-lock"></i></i> Authentication</a>
+                <ul class="children">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="resetpass.html">Reset Password</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--Sidebar End-->
+
+    <!--Header Start-->
+    <div class="topbar bg-primary">
+        <div class="dropdown profile-dropdown">
+            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="images/users/1.jpg" class="width-40 round-img" alt="Image">
+            </a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                    <li><a class="dropdown-item" href="#">Downloads</a></li>
+                    <li><a class="dropdown-item" href="#">My Cart</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Header End-->
+
+    <!--Main Body Start-->
+    <div class="main-body bg-light">
+        <div class="wrapper p-3">
+            <div class="breadcrumb-links">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i></a></li>
+                    <li class="breadcrumb-item active">Basic Table</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-title">Table with Search</div>
+                        <div class="card-content">
+                            <p class="para mb-20">You can be use those table for your desired dynamic content. It will
+                                be help you to show multiple data.</p>
+                            <table id="datatable1" class="display responsive nowrap" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>SL</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email</th>
+                                        <th>Earning</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Md Dalwar</td>
+                                        <td>Hossan</td>
+                                        <td>dalwar@domain.com</td>
+                                        <td>$20,201</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>Md Mojibur</td>
+                                        <td>Rahman</td>
+                                        <td>mojib@domain.com</td>
+                                        <td>$21,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>07</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>08</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>09</td>
+                                        <td>Mir Mosharaf</td>
+                                        <td>Hossain</td>
+                                        <td>mosharaf@domain.com</td>
+                                        <td>$28,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Md Mokbol</td>
+                                        <td>Hossain</td>
+                                        <td>mokbol@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Md Mojibur</td>
+                                        <td>Rahman</td>
+                                        <td>mojib@domain.com</td>
+                                        <td>$21,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Mir Mosharaf</td>
+                                        <td>Hossain</td>
+                                        <td>mosharaf@domain.com</td>
+                                        <td>$28,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Md Mokbol</td>
+                                        <td>Hossain</td>
+                                        <td>mokbol@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Md Karim</td>
+                                        <td>Hossain</td>
+                                        <td>karim@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Md Alamin</td>
+                                        <td>Hossain</td>
+                                        <td>alamin@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card card-primary">
+                        <div class="card-title">Table without Search</div>
+                        <div class="card-content">
+                            <p class="para mb-20">You can be use those table for your desired dynamic content. It will
+                                be help you to show multiple data.</p>
+                            <table id="datatable2" class="display responsive nowrap" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>SL</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Email</th>
+                                        <th>Earning</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Md Dalwar</td>
+                                        <td>Hossan</td>
+                                        <td>dalwar@domain.com</td>
+                                        <td>$20,201</td>
+                                        <td><span class="badge badge-success">Active</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>Md Mojibur</td>
+                                        <td>Rahman</td>
+                                        <td>mojib@domain.com</td>
+                                        <td>$21,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>07</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>08</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>09</td>
+                                        <td>Mir Mosharaf</td>
+                                        <td>Hossain</td>
+                                        <td>mosharaf@domain.com</td>
+                                        <td>$28,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Md Mokbol</td>
+                                        <td>Hossain</td>
+                                        <td>mokbol@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Md Mojibur</td>
+                                        <td>Rahman</td>
+                                        <td>mojib@domain.com</td>
+                                        <td>$21,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>Md Abdul</td>
+                                        <td>Ali</td>
+                                        <td>mdali@domain.com</td>
+                                        <td>$25,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>Surajit</td>
+                                        <td>Biswas</td>
+                                        <td>surajit@domain.com</td>
+                                        <td>$26,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>Jone</td>
+                                        <td>Chowdhury</td>
+                                        <td>chowdhury@domain.com</td>
+                                        <td>$27,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Mir Mosharaf</td>
+                                        <td>Hossain</td>
+                                        <td>mosharaf@domain.com</td>
+                                        <td>$28,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Md Mokbol</td>
+                                        <td>Hossain</td>
+                                        <td>mokbol@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Md Habib</td>
+                                        <td>Ullah</td>
+                                        <td>habib@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Md Mostak</td>
+                                        <td>Ahmed</td>
+                                        <td>mostak@domain.com</td>
+                                        <td>$22,000</td>
+                                        <td><span class="badge badge-success">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>Md Nazmol</td>
+                                        <td>Hossain</td>
+                                        <td>nazmol@domain.com</td>
+                                        <td>$24,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Md Karim</td>
+                                        <td>Hossain</td>
+                                        <td>karim@domain.com</td>
+                                        <td>$23,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Md Alamin</td>
+                                        <td>Hossain</td>
+                                        <td>alamin@domain.com</td>
+                                        <td>$29,000</td>
+                                        <td><span class="badge badge-danger">Rejected</span></td>
+                                        <td>
+                                            <a href="#" class="text-dark"><i class="fas fa-eye"></i></a>
+                                            <a href="#" class="text-secondary"><i class="far fa-edit"></i></a>
+                                            <a href="#" class="text-danger"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Body End-->
+
+    <!--Javascripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/datatable/datatables.min.js"></script>
+    <script src="js/plugins/datatable/initiate.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.breadcrumb {
+    &.bg-primary, &.bg-dark, &.bg-secondary, &.bg-red, &.bg-success, &.bg-danger, &.bg-warning {
+        a {
+            color: $white;
+        }
+        .breadcrumb-item {
+            color: $white;
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: $white;
+        }
+    }
+    
+    
+}

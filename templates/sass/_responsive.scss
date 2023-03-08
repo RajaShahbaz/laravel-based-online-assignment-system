@@ -1,0 +1,27 @@
+@media all and (max-width: 768px){
+  .sidebar {
+    left: -230px;
+  }
+  .main-body {
+    margin-left: 0;
+  }
+  .logo-area {
+    left: -175px;
+  }
+  .topbar {
+    left: 55px;
+  }
+  .sidebar-off {
+    .sidebar {
+      left: 0;
+    }
+  }
+}
+
+@media all and (max-width: 360px){
+  .profile-dropdown {
+    .dropdown-menu {
+      left: -76px !important;
+    }
+  }
+}
